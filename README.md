@@ -1,10 +1,9 @@
 # anbu
 
-anbu is the source of truth for how t2c1 builds with AI.
-The short form of that aim is "how i build with ai".
-Other repositories point here from a thin `CLAUDE.md`.
-Those repositories include Swale, Soultrip, C300, and thinktwicecodeonce.com.
-Antonio reviews each change and merges it.
+anbu holds shared engineering standards, a skills library, and a bounded agent plugin.
+Any project can point here from a thin `CLAUDE.md`.
+The human reviewer reviews each change.
+The human reviewer merges each change.
 
 ## Layout
 
@@ -61,7 +60,7 @@ It does not take a second issue, and it does not merge.
 
 `merge-gate-reviewer` runs the build, standards, security, and regression gates.
 It never merges, and it never edits a file to force a pass.
-Antonio makes the merge decision.
+The human reviewer makes the merge decision.
 
 ## Commands
 

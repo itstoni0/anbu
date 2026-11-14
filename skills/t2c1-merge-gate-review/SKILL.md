@@ -1,12 +1,12 @@
 ---
 name: t2c1-merge-gate-review
-description: Use this when you review a pull request or a diff before Antonio merges.
+description: Use this when you review a pull request or a diff before the human reviewer merges.
 ---
 # t2c1 Merge Gate Review
 
 Run this four-part gate before you approve a pull request.
-Run this four-part gate before you hand an implementation to Antonio.
-Antonio makes the merge decision.
+Run this four-part gate before you hand an implementation to the human reviewer.
+The human reviewer makes the merge decision.
 
 ## Gate 1 - Build and CI
 
@@ -59,4 +59,4 @@ Hand off with a short note in ASD-STE100 Simplified Technical English.
 Point the note at the exact files, lines, and primary sources.
 
 Do not replace a primary source with a summary.
-Antonio makes the final merge decision.
+The human reviewer makes the final merge decision.

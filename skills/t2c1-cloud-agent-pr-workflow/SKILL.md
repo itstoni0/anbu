@@ -28,7 +28,7 @@ State the phased review gates in the prompt.
 State the production safety guardrails in the prompt.
 Include the project branch name pattern.
 
-One pattern is `itstoni0/<key>-<number>-<short-description>` when the work uses Linear.
+One pattern is `<user>/<key>-<number>-<short-description>` when the work uses Linear.
 Forbid em dashes in the prompt.
 Tell the agent to write each PR description in ASD-STE100 Simplified Technical English.
 Tell the agent to write each commit message in ASD-STE100 Simplified Technical English.
@@ -50,6 +50,6 @@ Write status updates in ASD-STE100 Simplified Technical English.
 Use short sentences, the active voice, and one instruction per sentence.
 Use the same term for the same thing.
 An agent drafts the change and verifies the change.
-Antonio reviews the change and merges the change.
+The human reviewer reviews the change and merges the change.
 For an infrastructure change, PR review is the deployment gate.
 A merge to `main` starts the pipeline apply.

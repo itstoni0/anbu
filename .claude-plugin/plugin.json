@@ -1,13 +1,12 @@
 {
   "name": "anbu",
   "displayName": "anbu",
-  "description": "Standards, skills, and bounded agents for how t2c1 builds with AI.",
+  "description": "Standards, skills, and bounded agents for a shared engineering workflow.",
   "version": "0.1.0",
   "author": {
-    "name": "Antonio",
-    "url": "https://github.com/itstoni0"
+    "name": "the human reviewer"
   },
   "homepage": "https://github.com/itstoni0/anbu",
   "repository": "https://github.com/itstoni0/anbu",
-  "keywords": ["t2c1", "standards", "agents"]
+  "keywords": ["standards", "agents"]
 }

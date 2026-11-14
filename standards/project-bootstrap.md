@@ -1,7 +1,6 @@
 # t2c1 Project and Bot Bootstrap
 
-Use this checklist for a new t2c1 repository.
-Use this checklist for a new project Grok Bot.
+Use this checklist for a new repository that follows these standards.
 
 ## Repository setup
 
@@ -18,16 +17,9 @@ Make CI enforce format, lint, and unit tests.
 Make CI enforce golden-file checks when the project has those files.
 Make CI enforce IaC checks when the project has infrastructure.
 
-## Project bot setup
+## Shared scope
 
-Set the Grok Bot profile to the project scope.
-Keep Reunitus and NetTracer outside that scope.
-Escalate to Master Chief for a cross-project standard.
-Escalate to Mr. Robot for a cross-project standard.
-Escalate to Master Chief for a cloud agent task.
-Escalate to Mr. Robot for a cloud agent task.
-
-Point the bot at the shared skills.
+Point the project at the shared skills.
 The skills are t2c1 Engineering Standards and t2c1 Merge Gate Review.
 The skills also include t2c1 Cloud Agent and PR Workflow.
 The skills also include t2c1 Voice and Drafting.
@@ -35,3 +27,5 @@ Verify the connected GitHub, Linear, and Notion workspaces.
 Verify the Cursor cloud agent environments.
 
 Do this check before you hand off the first build task.
+Do not put a private assistant rule in this standard.
+Do not put a private escalation path in this standard.

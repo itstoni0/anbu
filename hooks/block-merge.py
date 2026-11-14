@@ -36,7 +36,7 @@ def main() -> int:
             "hookSpecificOutput": {
                 "hookEventName": "PreToolUse",
                 "permissionDecision": "deny",
-                "permissionDecisionReason": "An anbu agent does not merge. Antonio merges.",
+                "permissionDecisionReason": "An anbu agent does not merge. The human reviewer merges.",
             }
         },
         sys.stdout,

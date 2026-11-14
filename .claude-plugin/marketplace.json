@@ -2,14 +2,13 @@
   "name": "anbu",
   "description": "Marketplace for the anbu standards and the agent plugin.",
   "owner": {
-    "name": "Antonio",
-    "url": "https://github.com/itstoni0"
+    "name": "the human reviewer"
   },
   "plugins": [
     {
       "name": "anbu",
       "source": "./",
-      "description": "Standards, skills, and bounded agents for how t2c1 builds with AI."
+      "description": "Standards, skills, and bounded agents for a shared engineering workflow."
     }
   ]
 }

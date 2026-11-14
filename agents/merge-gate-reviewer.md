@@ -1,6 +1,6 @@
 ---
 name: merge-gate-reviewer
-description: Run the four merge gates, hand off to Antonio, and never merge.
+description: Run the four merge gates, hand off to the human reviewer, and never merge.
 tools: Read, Grep, Glob, Bash
 model: inherit
 maxTurns: 40
@@ -37,7 +37,7 @@ Require these inputs before you start.
 Return a gate report with four verdicts.
 Each verdict is PASS or FAIL.
 On FAIL, name the file, the line, and the rule.
-End the report with a handoff note for Antonio.
+End the report with a handoff note for the human reviewer.
 Write that note in ASD-STE100 Simplified Technical English.
 Point the note at the exact files, lines, and primary sources.
 
@@ -89,4 +89,4 @@ Do not merge.
 Do not run `git merge`.
 Do not run `gh pr merge`.
 Do not push.
-Hand the report to Antonio for the merge decision.
+Hand the report to the human reviewer for the merge decision.

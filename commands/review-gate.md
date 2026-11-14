@@ -8,7 +8,7 @@ Dispatch the `anbu:merge-gate-reviewer` agent on this task.
 Do not edit files in the main session to force a pass.
 Pass the diff or the pull request below as the task input.
 Ask for four verdicts.
-Ask for a handoff note to Antonio.
+Ask for a handoff note to the human reviewer.
 
 Stop when the agent stops.
 Do not merge.

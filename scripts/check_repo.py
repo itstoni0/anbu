@@ -160,7 +160,7 @@ PHRASES = {
         "Gate 3",
         "Gate 4",
         "Do not merge",
-        "Antonio",
+        "the human reviewer",
         "hardcoded",
         ".env",
     ),
@@ -170,16 +170,13 @@ PHRASES = {
         "CLAUDE.md",
         "direct-to-main",
         "pipeline apply",
-        "Antonio",
+        "human reviewer",
     ),
     "standards/project-bootstrap.md": (
         ".gitignore",
         ".env",
-        "Reunitus",
-        "NetTracer",
-        "Master Chief",
-        "Mr. Robot",
-        "Grok Bot",
+        "private assistant",
+        "private escalation",
     ),
 }
 

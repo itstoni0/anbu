@@ -10,7 +10,7 @@ Install the plugin with `/plugin install anbu@anbu`.
 Stack: replace this line with the languages and the frameworks.
 Lint: replace this line with the lint command.
 Test: replace this line with the test command.
-Branch pattern: `itstoni0/<key>-<number>-<short-description>`.
+Branch pattern: `<user>/<key>-<number>-<short-description>`.
 Environments: replace this line with the environment boundaries.
 
 ## Exceptions
