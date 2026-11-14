@@ -9,10 +9,12 @@ The text may be a chat message, a PR description, a doc, or an email.
 
 ## Technical content uses ASD-STE100
 
-Write PR titles and PR descriptions in ASD-STE100 Simplified Technical English.
-Write commit messages in ASD-STE100 Simplified Technical English.
-Write Linear issues, GitHub issues, and their comments in ASD-STE100 Simplified Technical English.
-Write code comments, READMEs, and docs in ASD-STE100 Simplified Technical English.
+Write these texts in ASD-STE100 Simplified Technical English.
+
+- PR titles and PR descriptions
+- Commit messages
+- Linear issues, GitHub issues, and their comments
+- Code comments, READMEs, and docs
 t2c1 Engineering Standards states the STE rules.
 For this technical content, the STE rules win over the relaxed style below.
 
@@ -31,11 +33,9 @@ Do not give implementation detail to that audience.
 ## Style and format
 
 Keep the text short.
-Cut any text that does not change what the reader knows.
-Cut any text that does not change what the reader does.
+Cut any text that does not change what the reader knows or does.
 Use relaxed, clear, plain language in chat and in email.
-Humor is welcome in chat and in email when the point stays crisp.
-Playfulness is welcome in chat and in email when the point stays crisp.
+Humor and playfulness are welcome in chat and in email when the point stays crisp.
 
 Never use an emoji.
 Never use an em dash.

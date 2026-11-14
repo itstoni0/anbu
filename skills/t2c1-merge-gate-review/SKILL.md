@@ -14,10 +14,7 @@ Confirm that the build compiles with a clean result.
 Confirm that every required CI check passes.
 Confirm that every required linter passes.
 Do not ignore a failure.
-Confirm that generated files match their sources.
-Confirm that lock files match their sources.
-
-Confirm that golden files match their sources.
+Confirm that generated files, lock files, and golden files match their sources.
 Do not leave a file that needs a fresh generation.
 
 ## Gate 2 - Coding standards and drift
@@ -27,23 +24,20 @@ Confirm that the change follows the repository `CLAUDE.md`.
 Confirm that the diff has no em dash.
 Confirm that nobody edited a generated file by hand.
 Confirm that the diff has no speculative abstraction for one-off code.
-Confirm that the PR title follows ASD-STE100 Simplified Technical English.
+Confirm that these texts follow ASD-STE100 Simplified Technical English.
 
-Confirm that the PR description follows ASD-STE100 Simplified Technical English.
-Confirm that each commit message follows ASD-STE100 Simplified Technical English.
-Confirm that code comments in the diff follow ASD-STE100 Simplified Technical English.
-Confirm that docs in the diff follow ASD-STE100 Simplified Technical English.
-For an infrastructure change, check environment drift.
-For an infrastructure change, check unintended blast radius.
+- The PR title
+- The PR description
+- Each commit message
+- Code comments in the diff
+- Docs in the diff
 
-For an infrastructure change, check side effects across environments.
+For an infrastructure change, check environment drift, unintended blast radius, and cross-environment side effects.
 
 ## Gate 3 - Security and hygiene
 
-Check the diff for a committed `.env` file.
-Check the diff for a secret, a token, or a hardcoded credential.
-Check the diff for an IAM rule that grants too much access.
-Check the diff for a network rule that grants too much access.
+Check the diff for a committed `.env` file, a secret, a token, or a hardcoded credential.
+Check the diff for an IAM rule or a network rule that grants too much access.
 Check the diff for input that the code does not validate.
 Confirm that sensitive defaults stay in place.
 

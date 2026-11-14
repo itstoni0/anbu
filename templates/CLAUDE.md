@@ -1,8 +1,7 @@
 # Project name
 
-Read the anbu standards before you change this repository.
-The standards live at `https://github.com/itstoni0/anbu` in `standards/`.
-The skills live in that same repository under `skills/`.
+Read the anbu skills before you change this repository.
+The skills live at `https://github.com/itstoni0/anbu` under `skills/`.
 Install the plugin with `/plugin install anbu@anbu`.
 
 ## Project facts

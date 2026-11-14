@@ -22,9 +22,10 @@ The next section states the STE rules.
 ## Written content (ASD-STE100)
 
 This rule covers every technical text that an agent writes.
-The list is PR titles, PR descriptions, and commit messages.
-The list also covers Linear issues, Linear comments, GitHub issues, and review comments.
-The list also covers code comments, READMEs, and docs.
+
+- PR titles, PR descriptions, and commit messages
+- Linear issues, Linear comments, GitHub issues, and review comments
+- Code comments, READMEs, and docs
 
 Use one word for one meaning.
 Use the same term for the same thing every time.
@@ -57,15 +58,11 @@ Put a caution before the step that it covers.
 Prefer quality, simplicity, robustness, scalability, and long-term maintainability.
 This preference is strongest for platform code and for IaC code.
 Do not trade those qualities for a faster implementation.
-Reproduce a bug before you propose a fix.
-Reproduce a bug before you write a fix.
+Reproduce a bug before you propose or write a fix.
 Use an environment as close to real use as you can.
 
-Flag a lint error when you see it.
-Flag a failed test or a flaky test when you see it.
-Flag infrastructure drift when you see it.
-Flag an unintended blast radius when you see it.
-Flag an inconsistent module pattern when you see it.
+Flag a lint error, a failed test, or a flaky test when you see it.
+Flag infrastructure drift, unintended blast radius, or an inconsistent module pattern when you see it.
 Flag these issues even when they sit outside the current task.
 
 ## Language and IaC defaults

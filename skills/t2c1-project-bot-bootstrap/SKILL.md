@@ -9,7 +9,7 @@ Use this checklist for a new t2c1 repository.
 ## Repository setup
 
 Create the repository with a thin `CLAUDE.md`.
-Point that file at the shared anbu standards.
+Point that file at the shared anbu skills.
 Record only the project-specific facts in that file.
 Record the stack, the lint command, and the test command.
 Record the branch workflow and the environment boundaries.
@@ -23,10 +23,12 @@ Make CI enforce IaC checks when the project has infrastructure.
 
 ## Shared scope
 
-Point the project at the shared skills.
-The skills are t2c1 Engineering Standards and t2c1 Merge Gate Review.
-The skills also include t2c1 Cloud Agent and PR Workflow.
-The skills also include t2c1 Voice and Drafting.
+Point the project at these shared skills.
+
+- t2c1 Engineering Standards
+- t2c1 Merge Gate Review
+- t2c1 Cloud Agent and PR Workflow
+- t2c1 Voice and Drafting
 Verify the connected GitHub, Linear, and Notion workspaces.
 Verify the Cursor cloud agent environments.
 

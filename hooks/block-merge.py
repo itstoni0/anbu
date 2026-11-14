@@ -12,10 +12,36 @@ AGENTS = {
     "merge-gate-reviewer",
 }
 
-MERGE = re.compile(
-    r"(?:^|[;&|]\s*)(?:git\s+merge|gh\s+pr\s+merge|hub\s+merge)\b",
+GIT_MERGE = re.compile(
+    r"""
+    \bgit\b
+    (?:
+        \s+
+        (?:
+            -(?:C|c)\s+\S+
+            | --(?:git-dir|work-tree|namespace|super-prefix|config-env|exec-path)(?:=\S+|\s+\S+)
+            | --[\w-]+
+            | -[A-Za-z]+
+        )
+    )*
+    \s+merge(?![\w-])
+    """,
+    re.IGNORECASE | re.VERBOSE,
+)
+OTHER_MERGE = re.compile(
+    r"\b(?:gh\s+pr\s+merge|hub\s+merge)(?![\w-])",
     re.IGNORECASE,
 )
+
+
+def normalize(command: str) -> str:
+    text = re.sub(r'"([^"]*)"', r" \1 ", command)
+    return re.sub(r"'([^']*)'", r" \1 ", text)
+
+
+def is_merge(command: str) -> bool:
+    text = normalize(command)
+    return GIT_MERGE.search(text) is not None or OTHER_MERGE.search(text) is not None
 
 
 def main() -> int:
@@ -25,11 +51,10 @@ def main() -> int:
     except json.JSONDecodeError:
         return 0
     agent = str(data.get("agent_type") or "")
-    short = agent.split(":")[-1]
-    if short not in AGENTS:
+    if agent.split(":")[-1] not in AGENTS:
         return 0
     command = str((data.get("tool_input") or {}).get("command") or "")
-    if MERGE.search(command) is None:
+    if not is_merge(command):
         return 0
     json.dump(
         {

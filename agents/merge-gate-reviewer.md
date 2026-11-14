@@ -57,12 +57,13 @@ Confirm that the change follows the repository `CLAUDE.md`.
 Confirm that the diff has no em dash.
 Confirm that nobody edited a generated file by hand.
 Confirm that the diff has no speculative abstraction for one-off code.
-Confirm that the PR title follows ASD-STE100 Simplified Technical English.
+Confirm that these texts follow ASD-STE100 Simplified Technical English.
 
-Confirm that the PR description follows ASD-STE100 Simplified Technical English.
-Confirm that each commit message follows ASD-STE100 Simplified Technical English.
-Confirm that code comments in the diff follow ASD-STE100 Simplified Technical English.
-Confirm that docs in the diff follow ASD-STE100 Simplified Technical English.
+- The PR title
+- The PR description
+- Each commit message
+- Code comments in the diff
+- Docs in the diff
 For infrastructure, check drift, blast radius, and cross-environment side effects.
 
 ## Gate 3 - Security and hygiene
@@ -86,7 +87,6 @@ Confirm that a bug fix was reproduced under realistic conditions.
 
 Stop when all four gates have a verdict.
 Do not merge.
-Do not run `git merge`.
-Do not run `gh pr merge`.
+Do not run a merge command.
 Do not push.
 Hand the report to the human reviewer for the merge decision.

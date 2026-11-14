@@ -10,13 +10,14 @@ Follow this workflow when you manage a pull request.
 ## Before launch
 
 Read the target repository `CLAUDE.md` first.
-Confirm the branch rules in that file.
-Confirm the linter config in that file.
-Confirm any documented workflow exception in that file.
-One example is a direct-to-main workflow.
-Launch a Cursor cloud agent for a non-trivial repository investigation.
+Confirm these facts in that file.
 
-Launch a Cursor cloud agent for a non-trivial code change.
+- The branch rules
+- The linter config
+- Any documented workflow exception
+
+One example is a direct-to-main workflow.
+Launch a Cursor cloud agent for a non-trivial investigation or code change.
 Do not clone the repository for that work when a cloud agent can do it.
 
 ## Prompt structure
@@ -30,12 +31,13 @@ Include the project branch name pattern.
 
 One pattern is `<user>/<key>-<number>-<short-description>` when the work uses Linear.
 Forbid em dashes in the prompt.
-Tell the agent to write each PR description in ASD-STE100 Simplified Technical English.
-Tell the agent to write each commit message in ASD-STE100 Simplified Technical English.
-Tell the agent to write each code comment in ASD-STE100 Simplified Technical English.
-Tell the agent to write each Linear comment in ASD-STE100 Simplified Technical English.
+Tell the agent to write these texts in ASD-STE100 Simplified Technical English.
 
-Tell the agent to write each GitHub comment in ASD-STE100 Simplified Technical English.
+- PR descriptions
+- Commit messages
+- Code comments
+- Linear comments
+- GitHub comments
 t2c1 Engineering Standards states the STE rules.
 
 ## Pull request rules
@@ -43,9 +45,11 @@ t2c1 Engineering Standards states the STE rules.
 Keep each commit message short.
 Keep each PR description short.
 Give only the context that another engineer needs.
-Write PR descriptions in ASD-STE100 Simplified Technical English.
-Write Linear ticket comments in ASD-STE100 Simplified Technical English.
-Write status updates in ASD-STE100 Simplified Technical English.
+Write these texts in ASD-STE100 Simplified Technical English.
+
+- PR descriptions
+- Linear ticket comments
+- Status updates
 
 Use short sentences, the active voice, and one instruction per sentence.
 Use the same term for the same thing.
