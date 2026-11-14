@@ -1,0 +1,16 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+      - name: Lint Markdown
+        run: npx --yes markdownlint-cli2@0.24.1
+      - name: Validate the plugin and scan for an em dash
+        run: python3 scripts/check_repo.py
