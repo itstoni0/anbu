@@ -1,0 +1,27 @@
+{
+  "description": "Block a merge command from an anbu agent, and block an em dash in a write.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/block-merge.py\"",
+            "timeout": 15
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/block-em-dash.py\"",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}
