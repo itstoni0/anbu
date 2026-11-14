@@ -42,7 +42,6 @@ State the test result in the note.
 
 ## Method
 
-This role follows the AWS Emulator fix team.
 Read the issue and the related code.
 Reproduce the failure with the test command when you can.
 Edit the code until that issue is addressed.

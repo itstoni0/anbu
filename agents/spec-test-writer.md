@@ -42,7 +42,6 @@ State pass or fail for that command.
 
 ## Method
 
-This role follows the AWS Emulator test team.
 Write a test that states a real use of the behavior.
 Make the expected result clear and repeatable.
 For a bug, write a test that fails on the current code.

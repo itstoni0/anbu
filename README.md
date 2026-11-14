@@ -2,8 +2,7 @@
 
 ## What it is
 
-anbu is the public standards repository for the t2c1 brand.
-It holds the shared rules, the skills, and a bounded agent plugin.
+Inspired by how the AWS team built AWS Emulator, anbu is my agent factory for building software with teams of agents.
 
 ## How to install
 

@@ -43,7 +43,6 @@ Do not invent a cause.
 
 ## Method
 
-This role follows the AWS Emulator failure team.
 Run the test command when you have a command and a repository.
 Read the failures.
 Group failures that share a root cause.
