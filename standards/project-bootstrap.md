@@ -1,6 +1,6 @@
 # t2c1 Project and Bot Bootstrap
 
-Use this checklist for a new repository that follows these standards.
+Use this checklist for a new t2c1 repository.
 
 ## Repository setup
 

@@ -1,10 +1,10 @@
 ---
 name: t2c1-project-bot-bootstrap
-description: Use this when you start a repository that follows these standards.
+description: Use this when you start a t2c1 repository.
 ---
 # t2c1 Project and Bot Bootstrap
 
-Use this checklist for a new repository that follows these standards.
+Use this checklist for a new t2c1 repository.
 
 ## Repository setup
 
